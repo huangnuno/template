@@ -20,8 +20,8 @@
     &--user {
       @include flex(flex-end);
 
-      .user--name {
-      }
+      // .user--name {
+      // }
 
       .user--avatar {
         display: block;
@@ -32,12 +32,12 @@
       }
 
       .el-icon-bell {
-        font-size: 30px;
+        font-size: 24px;
       }
     }
   }
 
-  &__content {
+  &__center {
     width: pw(1200);
     min-width: 1200px;
     margin: 0 auto;
@@ -45,6 +45,10 @@
     &--flex {
       @include flex(space-between);
     }
+  }
+
+  &__content {
+    padding-bottom: 10px;
   }
 
   &__main {
@@ -66,6 +70,20 @@
   &__aside {
     width: 180px;
     margin-right: 10px;
+    background: #fff;
+
+    &--shop {
+      @include flex;
+
+      flex-direction: column;
+      width: 100%;
+      height: 200px;
+
+      .shop--logo {
+        width: 80px;
+        height: 80px;
+      }
+    }
 
     // cover
     .el-menu {

@@ -1,7 +1,7 @@
 <template>
   <el-container class="admin">
     <el-header class="admin__header">
-      <div class="admin__content admin__content--flex">
+      <div class="admin__center admin__center--flex">
         <img class="admin__header--logo"
              src="../assets/images/logo.png" />
         <div class="admin__header--user">
@@ -19,9 +19,21 @@
         </div>
       </div>
     </el-header>
-    <el-container class="admin__content">
+    <el-container class="admin__content admin__center">
       <el-aside class="admin__aside"
                 width="180px">
+        <div class="admin__aside--shop">
+          <img src="http://wx.qlogo.cn/mmopen/G6laqcPSNfxKehdSKdQVnp7rlo33KEQqmjM3SMFCYvAMLYNCjAQjs5kjn1M0VbsicOlcDAL5PH5kTbzubREQVOfZufGjFy0DW/0"
+               class="shop--logo">
+          <el-dropdown placement="bottom">
+            <div class="shop--name">笔歌拼团<i class="el-icon-arrow-down"></i></div>
+            <el-dropdown-menu slot="dropdown">
+              <el-dropdown-item>笔歌拼团</el-dropdown-item>
+              <el-dropdown-item>笔歌拼团2</el-dropdown-item>
+            </el-dropdown-menu>
+          </el-dropdown>
+
+        </div>
         <el-menu default-active="1"
                  :router="true">
           <template v-for="(item,i) of routeNav">
