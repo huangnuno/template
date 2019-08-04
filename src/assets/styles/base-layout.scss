@@ -1,0 +1,90 @@
+@import "./variable";
+
+.admin {
+  width: 100%;
+  height: 100%;
+  background: #eef1f6;
+
+  &__header {
+    @include flex(space-between);
+
+    background: #fff;
+    margin-bottom: 10px;
+
+    &--logo {
+      width: 128px;
+      height: auto;
+      display: block;
+    }
+
+    &--user {
+      @include flex(flex-end);
+
+      .user--name {
+      }
+
+      .user--avatar {
+        display: block;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin: 0 15px;
+      }
+
+      .el-icon-bell {
+        font-size: 30px;
+      }
+    }
+  }
+
+  &__content {
+    width: pw(1200);
+    min-width: 1200px;
+    margin: 0 auto;
+
+    &--flex {
+      @include flex(space-between);
+    }
+  }
+
+  &__main {
+    @mixin c-s {
+      background: #fff;
+      padding: pw(20) pw(15);
+    }
+    padding: 0;
+
+    &--breadcrumb {
+      @include c-s;
+      margin-bottom: 10px;
+    }
+    &--content {
+      @include c-s;
+    }
+  }
+
+  &__aside {
+    width: 180px;
+    margin-right: 10px;
+
+    // cover
+    .el-menu {
+      border: none !important;
+    }
+
+    .el-menu-item.is-active {
+      background: #f0faff;
+
+      &::after {
+        content: "";
+        display: block;
+        width: 2px;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        background: #2d8cf0;
+      }
+    }
+  }
+}

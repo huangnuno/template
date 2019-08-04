@@ -1,0 +1,54 @@
+// 主字体颜色
+$text--color__main: #333333;
+$text--color__second: #78838e;
+
+// 主边框颜色
+$boder--color__main: #ced5da;
+
+$border--default: 1px solid $boder--color__main;
+
+// 背景色
+$background--color__main: #eeeeee;
+$background--color__second: #fafafa;
+
+// 高亮色
+$light--color__main: #1593ff;
+$light--color__havebg: #ffffff;
+
+$parmary--color: #2d8cf0;
+$danger--color: #ed4014;
+$light--color: #5cadff;
+
+$box--shadow__default: 0 0 16px rgba(0, 0, 0, 0.16);
+
+$default--container__width: 320px;
+$default--container__height: 500px;
+
+@mixin default--container__size {
+  width: $default--container__width;
+  height: $default--container__height;
+}
+
+@mixin flex($justify-content: center, $align-items: center) {
+  display: flex;
+  justify-content: $justify-content;
+  align-items: $align-items;
+}
+
+// 获取不同分辨率下字体大小
+@function font-size__screen($width: 320px) {
+  @return 50px * $width/320px;
+}
+// px转rem
+@function ptr($size: 35) {
+  @return $size * 1px / font-size__screen(375px) * 1rem;
+}
+
+@mixin wh($w: 100%, $h: 100%) {
+  width: $w;
+  height: $h;
+}
+
+@function pw($size) {
+  @return $size / 1920 * 100vw;
+}
