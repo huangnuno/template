@@ -36,6 +36,32 @@ export default [
           },
         ],
       },
+      {
+        path: "decoration",
+        meta: {
+          title: "店铺装修",
+          icon: "",
+        },
+        component: BaseContent,
+        children: [
+          {
+            path: "",
+            name: "DecorationIndex",
+            meta: {
+              title: "首页",
+            },
+            component: () => import("@/views/decoration/Index.vue"),
+          },
+          {
+            path: "edit",
+            name: "DecorationEdit",
+            meta: {
+              title: "装修",
+            },
+            component: () => import("@/views/decoration/Edit.vue"),
+          },
+        ],
+      },
     ],
   },
   {

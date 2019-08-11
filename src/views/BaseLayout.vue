@@ -32,9 +32,8 @@
               <el-dropdown-item>笔歌拼团2</el-dropdown-item>
             </el-dropdown-menu>
           </el-dropdown>
-
         </div>
-        <el-menu default-active="1"
+        <el-menu default-active="/"
                  :router="true">
           <template v-for="(item,i) of routeNav">
             <template v-if="item.children">
@@ -93,9 +92,13 @@ export default class BaseLayout extends Vue {
       })
       .filter(item => item);
   }
+
+  created() {
+    console.log(this.$route.path);
+  }
 }
 </script>
   
-<style lang="scss" scoped>
+<style lang="scss">
 @import "../assets/styles/base-layout.scss";
 </style>

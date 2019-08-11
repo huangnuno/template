@@ -1,0 +1,14 @@
+@import "./variable";
+
+.decoration {
+  &__edit {
+  }
+
+  &__page {
+    &--form {
+      margin-bottom: 15px;
+    }
+    &--table {
+    }
+  }
+}
