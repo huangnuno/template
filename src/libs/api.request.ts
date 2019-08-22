@@ -5,9 +5,7 @@ import { IGetAPI, IPostAPI, IPutAPI, IDeleteAPI } from "@/api/interface";
 
 class Request {
   private axios: HttpRequest;
-  constructor(
-    baseUrl = config.isProduction ? config.baseUrl.pro : config.baseUrl.dev,
-  ) {
+  constructor(baseUrl = config.baseUrl[process.env.NODE_ENV]) {
     this.axios = new HttpRequest({ baseURL: baseUrl });
   }
 

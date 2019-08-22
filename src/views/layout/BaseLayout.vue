@@ -3,7 +3,7 @@
     <el-header class="admin__header">
       <div class="admin__center admin__center--flex">
         <img class="admin__header--logo"
-             src="../assets/images/logo.png" />
+             src="../../assets/images/logo.png" />
         <div class="admin__header--user">
           <i class="el-icon-bell"></i>
           <img class="user--avatar"
@@ -100,5 +100,5 @@ export default class BaseLayout extends Vue {
 </script>
   
 <style lang="scss">
-@import "../assets/styles/base-layout.scss";
+@import "../../assets/styles/base-layout.scss";
 </style>

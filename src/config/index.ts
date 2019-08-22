@@ -6,12 +6,12 @@ export default {
   /**
    * @description 浏览器标签的title
    */
-  title: "template",
+  title: "笔歌拼团",
   /**
    * @description api请求基础路径
    */
   baseUrl: {
-    dev: "",
-    pro: "",
+    develoment: "",
+    production: "",
   },
 };

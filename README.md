@@ -25,9 +25,9 @@ npm run test
 npm run lint
 ```
 
-## doc
+[开发手册](/doc/开发手册.md)
 
-(vue-property-decorator)[https://github.com/kaorun343/vue-property-decorator]
+[规范手册](/doc/规范手册.md)
 
+[项目结构](/doc/项目结构.md)
 
-(vuex-class)[https://github.com/ktsn/vuex-class]

@@ -1,6 +1,6 @@
 import { RouteConfig } from "vue-router";
-import BaseLayout from "@/views/BaseLayout.vue";
-import BaseContent from "@/views/BaseContent.vue";
+import BaseLayout from "@/views/layout/BaseLayout.vue";
+import BaseContent from "@/views/layout/BaseContent.vue";
 import SignIn from "@/views/SignIn.vue";
 
 export default [
